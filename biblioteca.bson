@@ -1,0 +1,19 @@
+// Crie uma collection de uma biblioteca com os dados de: nome do livro, autor,
+// ano da edição, se está emprestado ou não (true ou false)
+
+use biblioteca;
+
+db.biblioteca.insertMany([
+    {
+        nome: 'O Mágico de Oz',
+        autor: 'Leonardo Lucas',
+        ano: 2007,
+        emprestado: 1
+    },
+    {
+        nome: 'Sútil Arte de Ligar o Foda-se',
+        autor: 'Steven Spielberg',
+        ano: 2015,
+        emprestado: 0
+    },
+])
